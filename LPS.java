@@ -38,3 +38,20 @@
       System.out.println("Length of LCS is "+maxlength+" and it starts at "+start);
 
     }
+    
+ /*
+  e.g consider string "camdmac"
+  The table for the above string would be
+  
+        true        false        false        false        false        false        true
+        false        true        false        false        false        true        false
+        false        false        true        false        true        false        false
+        false        false        false        true        false        false        false
+        false        false        false        false        true        false        false
+        false        false        false        false        false        true        false
+        false        false        false        false        false        false        true
+        
+ Initially all the diagonals will be true i.e [0][0].....[6][6]. Then second for loop will look for palindrome of length  2. We do not have any palindrome of length 2. Then algorithm would go to line 23 and it will find palindrome of max length.
+ 
+ Reference:http://www.geeksforgeeks.org/longest-palindrome-substring-set-1/
+ */
